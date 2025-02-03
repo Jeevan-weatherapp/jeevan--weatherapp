@@ -1,0 +1,128 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.weather-card {
+    background: linear-gradient(to bottom, hsl(162, 73%, 27%), #808080);
+    padding: 60px;
+    border-radius: 25px;
+    text-align: center;
+    width: 350px;
+    color: rgb(249, 244, 244);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 450px;
+}
+
+.app-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.search-container {
+    display: flex;
+    align-items: center; /* Vertically center the input and button */
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+input {
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    width: 100%;
+    font-size: 16px;
+}
+
+button {
+    background: non;
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button img {
+    width: 20px;
+}
+
+.weather-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.main-info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.main-info img {
+    width: 60px;  /* Adjust the icon size */
+    vertical-align: middle; /* Align the icon with the text */
+    margin-right: 10px; /* Space between icon and temperature */
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 10px 0;
+    display: inline; /* Ensure temperature text is inline with the icon */
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+#dateTime {
+    font-size: 18px;
+    color: #f1f1f1;
+    margin-top: 10px;
+}
+
+.humidity-wind {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.humidity, .wind-speed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.humidity img, .wind-speed img {
+    width: 40px;  /* Adjust icon size */
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(63, 173, 168, 0.7);
+}
+
+button:hover img {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}

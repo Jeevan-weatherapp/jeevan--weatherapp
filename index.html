@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="weather-card">
+        <h1 class="app-name">Jeevan's Weather App</h1> <!-- App Name -->
+        <div class="search-container">
+            <input type="text" id="cityInput" placeholder="Enter city name">
+            <button onclick="getWeather()">
+                <img src="img/search-icon.png" alt="Search">
+            </button>
+        </div>
+        <div class="weather-info">
+            <div class="main-info">
+                <img id="weatherIcon" src="" alt="Weather Icon" />
+                <h1 id="temperature">--°C</h1>
+                <h2 id="cityName">City</h2>
+                <p id="dateTime">--</p> <!-- Display date and time here -->
+            </div>
+            <div class="humidity-wind">
+                <div class="humidity">
+                    <img id="humidityIcon" src="img/humidity-icon.png" alt="Humidity Icon">
+                    <p>Humidity: <span id="humidity">--%</span></p>
+                </div>
+                <div class="wind-speed">
+                    <img id="windIcon" src="img/wind-icon.png" alt="Wind Icon">
+                    <p>Wind Speed: <span id="windSpeed">-- km/h</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
